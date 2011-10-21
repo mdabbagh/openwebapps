@@ -91,6 +91,7 @@ After authenticating with the server and getting back the URL of the collection,
 `since` is optional; on first sync is should be empty or left off. The server will return an object:
 
     {
+      since: timestamp,
       until: timestamp,
       incomplete: bool,
       applications: {origin: {...}, ...}
